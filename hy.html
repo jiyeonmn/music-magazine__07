@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by hiyyaeh (http://jsbin.com/vagaqaw/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.67">
+  <title>Oasis</title>
+  <!-- Noto Sans 폰트 가져오기 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+  <style>
+    body {
+      font-family: 'arial','Noto Sans', sans-serif; 
+    }
+    .inner {
+  width: 100%;
+  height: 100%; 
+  max-width: 1616.3px; 
+  max-height: 781px;
+ margin: 0 auto;
+  background: #FFFFFF;
+  align-items: center;   
+}
+
+
+    header {
+      width: 1616.3px;
+      height: 19.8198px;
+      background: #000000;
+    }
+
+    .content-container {
+      display: flex;
+    }
+
+    .side-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5mm;
+    }
+
+    .side {
+      width: 81.206mm;
+      height: 40mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      display: flex;
+      position: relative
+    }
+
+    .side p {
+      margin-top: 0mm;
+      margin-left: 2mm;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .line {
+      height: 3px; 
+      background-color: black; 
+      position: absolute; 
+      width: 51mm; 
+      top: 28mm;
+    margin-left:30.3mm}
+
+    .side1 {
+      width: 81.206mm;
+      height: 81.206mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+     
+    }
+    
+
+    .side2 {
+      width: 81.206mm;
+      height: 51.25mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+    }
+    .side2 p{ margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px}
+   
+    .con3 {
+      width: 140.8mm;
+      height: 110.645mm;
+      background: #FFFFFF;
+      margin-top: 1mm;
+      margin-bottom: 1mm;
+      margin-right: 1mm;
+      float: left;
+      border: 3px solid black;
+      display: flex;
+      position: relative;
+        
+    }
+     .line2 {
+      height: 3px; /* 선의 높이 */
+      background-color: black; /* 선의 색상 */
+      position: absolute; /* 절대 위치 */
+      width: 111mm; /* 너비를 100%로 설정하여 부모 요소의 너비를 채움 */
+      top: 28mm;
+    margin-left:30.3mm
+    }
+    
+    .con3 img {
+  position: absolute; 
+  top: 32mm; 
+  left: 0;  
+}
+   .con3 p {
+      margin-top: -3mm;
+      margin-left: 5mm;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    } 
+    .con3 p2 {
+      margin-top: -3mm;
+      margin-left: 5mm;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    
+   
+
+    .con5 {
+      width: 68.9mm;
+      height: 110.645mm;
+      background: #FFFFFF;
+      margin-top: 1mm;
+      margin-bottom: 1mm;
+      float: left;
+      border: 3px solid black;
+    }
+     .con5 p{ margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px}
+   
+    .con {
+      width: 128.485mm;
+      height: 86.711mm;
+      background: #FFFFFF;
+      margin-left: 1mm;
+      border: 3px solid black;
+      position: relative;
+      float: left;
+      display: flex;
+      
+    }
+    
+    .line3 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 53.2mm;
+    top: 28mm;
+    margin-left: 8.2mm;
+  }
+
+    .con p {
+       margin-top: 1mm;
+      margin-left: 2mm;
+      font-size: 100px;
+       font-weight: 900;
+      font-family: 'arial','Noto Sans', sans-serif;
+      transform: skew(-15deg);
+      letter-spacing: -2px
+    }
+    
+      .text-content p {
+      transform: none;
+      margin-top: 33mm;
+      margin-left: -62mm;
+      margin-right: 5mm;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.8;
+      letter-spacing: -0.1px;
+    }
+    
+
+    .con2 {
+      width: 128.485mm;
+      height: 87.369mm;
+      background: #FFFFFF;
+      margin-left: 1mm;
+      border: 3px solid black;
+    }
+
+    .S {
+      width: 74.982mm;
+      height: 32.718mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: -0.9mm;
+      right: -78.5mm; 
+    }
+    
+    .S p{
+       margin-top: -6.5mm;
+      margin-left: 5mm;
+      font-size: 100px;
+       font-weight: 900;
+       font-family: 'Noto Sans', sans-serif;
+      transform: none; 
+      position: relative;
+    }
+    .line4 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 45mm;
+    top: 28mm;
+    margin-left: 30.3mm;
+  }
+
+    .another-box {
+      width: 57.33mm;
+      height: 115.7mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 34.4mm;
+      right: -60.9mm;
+    }
+   .another-box p{ 
+               transform: none;
+               margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px
+               }
+    
+    .image3 {
+      width: 149.603mm;
+      height: 135.113mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 153.9mm;
+      right: -153.2mm;
+    }
+
+    .image4 {
+      width: 153.67mm;
+      height: 151mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: -0.9mm;
+      right: -214.6mm;
+    }
+
+    .another-box2 {
+      width: 60.33mm;
+      height: 100.153mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 188.9mm;
+      right: -136.8mm;
+    }
+    .another-box2 p{ 
+               transform: none;
+               margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px
+               }
+
+    .U {
+      width: 74.982mm;
+      height: 32.718mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 153.9mm;
+      right: -136.8mm; 
+      
+    }
+
+    .U p{
+       margin-top: -7mm;
+      margin-left: 5mm;
+      font-size: 100px;
+       font-weight: 900;
+       font-family: 'Noto Sans', sans-serif;
+      transform: none; 
+    }
+    .line5 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 45mm;
+    top: 28mm;
+    margin-left: 30.3mm;
+  }
+    
+
+    footer {
+      width: 1610.3px;
+      height: 19.8198px;
+      background: #000000;
+      clear: both;
+      border: 3px solid black;
+      position: relative;
+      top: -3.6px;
+      
+    }
+     .circle-button {
+      display: inline-block;
+      width: 50px; 
+      height: 50px; 
+      background-color: #000000; 
+      color: white;
+      text-align: center; 
+      line-height: 50px; 
+      border-radius: 50%; 
+      text-decoration: none; 
+      font-size: 16px; 
+      font-weight: bold; 
+      transition: background-color 0.3s; 
+       position: relative;
+      top: 1093px; 
+      left: 1800px;
+      z-index: 1;
+    }
+
+    .circle-button:hover {
+      background-color: #848484; 
+     
+    }
+
+  </style>
+</head>
+<body>
+  <a href= "jy.html" class="circle-button">Go</a>
+  <div class="wrap">
+    <div class="inner">
+      <header></header>
+      <div class="content-container">
+        <div class="side-column">
+          <aside class="side"><p>D</p><div class="line"></div></aside>
+          
+          <aside class="side1"><img src="https://i.imgur.com/nHPrmNc.png" style="width: 100%; height: 100%;"></aside>
+          <aside class="side2"><p>Definitely Maybe, 오아시스의 데뷔 앨범으로,
+                                  그 해 발표된 록 음악 최고의 앨범이자 록 앨범 역사를 대표하는 작품 중 하나로 여겨진다.
+                                  노엘 갤러거의 거친 기타 사운드를 중심으로 가장 자신다운 사운드를 만들어낸 작품.
+2새로운 마스터링으로 리마스터링 에디션으로, 오리지널 아트웍을 담은 게이트폴더 커버로 선보여 더 큰 즐거움을 준다.<p></aside>
+        </div>
+        <div class="side-column">
+          <article class="con">
+            <p>oasis</p>
+             <div class="text-content">
+               <p>오아시스는 1991년 8월 맨체스터의 보드워크라는 클럽에서 첫 공연을 가졌다. 당시 인스파이럴 카펫츠의 로드 매니저로 독일 투어 중이었던 노엘 갤러거는 어머니와 전화통화 중 리엄이 밴드에서 공연을 한다는 이야기를 듣고 동생의 공연을 보러 왔고, 말썽쟁이 동생이 사고치는 것 이외에 다른 재능이 있다는 사실을 발견하고 깜짝 놀랐다. 몇 달 뒤 그는 밴드에 들어오라는 권유를 받았다. 비록 그들의 음악이 형편없다고 생각했지만, 노엘은 자신이 리더로서 모든 곡을 쓸 것이며, 밴드는 상업적 성공을 위해 진지하게 노력한다는 조건으로 이를 수락했다. 노엘 갤러거가 이끄는 오아시스는 단순함을 그들의 음악적 방향성으로 잡았다.</p>
+                 
+            <div class="line3"></div>
+            <div class="another-box"><p>오아시스의 음악은 상당히 보수적이며 언제나 기본의 틀에서 크게 벗어나지 않는다. 기존에 만들어져 있던 것들을 최대한 활용하여 자신들만의 스타일로 해석한 음악을 내놓는 스타일이다. 이러한 요인들 때문인지 90년대에 활동한 밴드 중에서 상업적으로 가장 크게 성공한 밴드임에도 불구하고 이후 대중 음악에 막대한 영향을 끼친 너바나, 라디오헤드에 비해 비평적으로 다소 낮게 평가 받는다.</p></div>
+            <div class="image3"><img src="https://i.imgur.com/urASeq2.png" style="width: 100%; height: 100%;"></div>
+            <div class="image4"><img src="https://i.imgur.com/qvgMzUK.png" style="width: 100%; height: 100%;"></div>
+            <div class="S"><p>S</p><div class="line4"></div>
+            <div class="another-box2"><p>그럼에도 가장 중요한 밴드 중 하나로 꼽힌다는 것은 최고의 명반인 1, 2집에서 증명된 노엘의 탁월한 작곡 능력, 리암의 개성적인 보컬과 오아시스가 갖는 상징성, 다시 말해 엄청났던 전성기와 브릿팝 무브먼트의 임팩트를 반증하는 것. 오아시스가 대중적 인기에 비해 평론가들에게 평가가 박하다는 인식이 꽤 있으나, 실제로는 평론가들에게도 대단히 좋은 평을 받은 밴드이다.</p></div>
+              <div class="U"><p>U</p><div class="line5"></div>
+          </article>
+          <article class="con2"><img src="https://i.imgur.com/8lsIJd6.png" style="width: 100%; height: 100%;"></article>
+        </div>
+      </div>
+      <article class="con3"><p>A</p><img src="https://i.imgur.com/XAhCrW4.png" style="width:140.8mm; height:78.645mm;"><div class="line2"></div> </article>
+      <article class="con5"><p>오아시스식 음악은 전반적으로 브릿팝이라는 큰 틀 아래에서 노래를 만드는 방식이다. 다시 말해, 곡들의 기본적인 베이스는 대부분 비슷하다. 이러한 방식은 일반적으로 평론가들이 크게 선호하는 방식이 아님에도 불구하고 1집과 2집은 이견없이 역사에 한 획을 그은 명반으로 평가된다.
+다만 커리어 내내 이어진 대중적 인기와 상업적 성공, 역사에 남을 단기 임팩트 등 문화적인 영향력에 비해 음악적인 성과나 영향력 측면에선 대중음악의 역사를 뒤흔들 정도로 중요한 그룹은 아니라는 평가를 받는다. 때문에 간혹 음악정 성과에 비해 과대평과 된 밴드라는 말을 듣기도 한다. </p></article>
+      <footer></footer>
+    </div>
+   
+
+</body>
+</html>

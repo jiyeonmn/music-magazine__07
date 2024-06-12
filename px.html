@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by kohjimin (http://jsbin.com/fakizot/6/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=0.67">
+  <title>Oasis</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+  <style>
+    body {
+      font-family: 'arial','Noto Sans', sans-serif; 
+      margin: 0;
+    }
+    wrap {
+  display: flex; 
+      justify-content: center; }
+    
+    .inner {
+  width: 100%;
+  height: 100%; 
+  max-width: 1616px;
+  max-height: 781px;
+  margin: 0 auto; 
+  background: #FFFFFF;
+  align-items: center;  
+}
+
+
+    header {
+      width: 1616px;
+      height: 19.8198px;
+      background: #ADFF2F;
+      border: 3px solid #ADFF2F;
+    }
+
+    .content-container {
+      display: flex;
+    }
+
+    .side-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5mm;
+    }
+
+    .side {
+      width: 81.206mm;
+      height: 40mm;
+      background: #ADFF2F;
+      border: 3px solid black;
+      display: flex;
+      position: relative
+    }
+
+    .side p {
+      margin-top: 0.3mm;
+      margin-left: 2mm;
+      font-size: 110px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .line {
+      height: 3px; 
+      background-color: black;
+      position: absolute;
+      width: 51mm;
+      top: 33mm;
+    margin-left:30.3mm}
+
+    .side1 {
+      width: 81.206mm;
+      height: 81.206mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+     
+    }
+    
+
+    .side2 {
+      width: 81.206mm;
+      height: 134mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+    }
+    .side2 p{ margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px}
+   
+    .con3 {
+      width: 112mm;
+      height: 110.645mm;
+      background: #FFFFFF;
+      margin-top: 1mm;
+      margin-bottom: 1mm;
+      margin-right: 1mm;
+      float: left;
+      border: 3px solid black;
+      display: flex;
+      position: relative;
+        
+    }
+     .line2 {
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      width: 98.5mm;
+      top: 215mm;
+    margin-left:137mm
+    }
+    
+    .con3 img {
+  position: absolute; 
+  top: 0mm; 
+  left: 0;  
+}
+   .con3 p {
+      margin-top: -3mm;
+      margin-left: 5mm;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    } 
+    .con3 p2 {
+      margin-top: -3mm;
+      margin-left: 5mm;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    
+   
+
+    .con5 {
+      width: 97.6mm;
+      height: 27mm;
+      background: #ADFF2F;
+      margin-top: 1mm;
+      margin-bottom: 1mm;
+      float: left;
+      border: 3px solid black;
+      font-size: 100px;
+      font-weight: 900;
+      font-family: 'Noto Sans', sans-serif;
+    }
+     .con5 p{ margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px}
+      .con5 p {
+       margin-top: 2mm;
+      margin-left: 3.5mm;
+      font-size: 45px;
+       font-weight: 900;
+      font-family: 'arial','Noto Sans', sans-serif;
+      transform: skew(-15deg);
+      letter-spacing: -2px
+    }
+    .con {
+      width: 128.485mm;
+      height: 0mm;
+      background: #FFFFFF;
+      margin-left: 1mm;
+      border: 0px solid black;
+      position: relative;
+      float: left;
+      display: flex;
+      
+    }
+    
+    .line3 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 53.2mm;
+    top: 28mm;
+    margin-left: 8.2mm;
+  }
+
+    .con p {
+       margin-top: 1mm;
+      margin-left: 2mm;
+      font-size: 100px;
+       font-weight: 900;
+      font-family: 'arial','Noto Sans', sans-serif;
+      transform: skew(-15deg);
+      letter-spacing: -2px
+    }
+    
+      .text-content p {
+      transform: none;
+      margin-top: 33mm;
+      margin-left: -62mm;
+      margin-right: 5mm;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.8;
+      letter-spacing: -0.1px;
+    }
+    
+
+    .con2 {
+      width: 128.485mm;
+      height: 175.8mm;
+      background: #FFFFFF;
+      margin-left: 1mm;
+      border: 3px solid black;
+      top: 4mm;
+    }
+
+    .S {
+      width: 55.3mm;
+      height: 32.718mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 0.2mm;
+      right: -215.3mm; 
+    }
+    
+    .S p{
+       margin-top: -6.5mm;
+      margin-left: 5mm;
+      font-size: 100px;
+       font-weight: 900;
+       font-family: 'Noto Sans', sans-serif;
+      transform: none; 
+      position: relative;
+    }
+    .line4 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 45mm;
+    top: 28mm;
+    margin-left: 30.3mm;
+  }
+
+    .another-box {
+      width: 55.4mm;
+      height: 115.7mm;
+      background: #ADFF2F;
+      border: 3px solid black;
+      position: absolute;
+      top: 35.8mm;
+      right: -215.3mm;
+    }
+   .another-box p{ 
+               transform: none;
+               margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px
+               }
+    
+    .image3 {
+      width: 148.5mm;
+      height: 135.113mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 153.9mm;
+      right: -215.2mm;
+    }
+
+    .image4 {
+      width: 153.67mm;
+      height: 151mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 0.5mm;
+      right: -157.4mm;
+    }
+
+    .another-box2 {
+      width: 60.33mm;
+      height: 100.153mm;
+      background: #fffff;
+      border: 3px solid black;
+      position: absolute;
+      top: 189.1mm;
+      right: -64.2mm;
+    }
+    .another-box2 p{ 
+               transform: none;
+               margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px
+               }
+
+     .another-box3 {
+      width: 97.5mm;
+      height: 80.153mm;
+      background: #FFFFFF;
+      border: 3px solid black;
+      position: absolute;
+      top: 209mm;
+      right: -1.4mm;
+    }
+    .another-box3 p{ 
+               transform: none;
+               margin-top:3mm;
+              margin-left:4mm;
+              margin-right:5mm;
+             font-size: 13.5px;
+             font-weight: 800;
+             line-height: 1.8;
+              letter-spacing: -0.1px
+               }
+
+    .U {
+      width: 60mm;
+      height: 32.718mm;
+      background: #ADFF2F;
+      border: 3px solid black;
+      position: absolute;
+      top: 153.9mm;
+      right: -64mm; 
+      
+    }
+
+    .U p{
+       margin-top: -7mm;
+      margin-left: 5mm;
+      font-size: 100px;
+       font-weight: 900;
+       font-family: 'Noto Sans', sans-serif;
+      transform: none; 
+    }
+    .line5 {
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    width: 45mm;
+    top: 28mm;
+    margin-left: 30.3mm;
+  }
+    
+
+    footer {
+      width: 1610.3px;
+      height: 19.8198px;
+      background: #ADFF2F;
+      clear: both;
+      border: 3px solid #ADFF2F;
+      position: relative;
+      top: -3.6px;  
+    }
+.circle-button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-color: white; 
+      color: black; 
+      text-align: center; 
+      line-height: 50px; 
+      border-radius: 50%; 
+      text-decoration: none; 
+      font-size: 16px; 
+      font-weight: bold; 
+      transition: background-color 0.3s;
+       position: relative;
+      top: 1100px;
+      left: 1940px; 
+      z-index: 1;
+    }
+     .circle-button:hover {
+      background-color: #ADFF2F;
+      color: black;
+     
+    }
+      
+    }
+  </style>
+</head>
+<body>
+  <a href= "hj.html" class="circle-button">Go</a>
+  <div class="wrap">
+    <div class="inner">
+      <header></header>
+      <div class="content-container">
+        <div class="side-column">
+          <aside class="side"><p>S</p><div class="line"></div></aside>
+          <aside class="side2"><p>SILICAGEL<br>2015년 데뷔한 인디 밴드이다. 멤버는 보컬에 김한주, 기타에 김춘추, 드럼에 김건재, 베이스의 최웅희 4인으로 이루어진 밴드다. 실리카겔의 음악 스타일이 독특해 인기를 끌고 있다.<br>다채로운 스펙트럼을 바탕으로 구축해 낸 고유의 사이키델리아, 폭발적인 에너지의 라이브 퍼포먼스가 응집하여 현재 가장 새롭고, 용감한, 사운드를 만드는 밴드 ‘실리카겔(Silica Gel)’이 되었다.<br>사실 실리카겔 이전부터도 혁오, 잔나비 등 인디 내지 모던 록 계보들의 성공가도는 얼마든지 존재했지만, 실리카겔은 이 계보로부터 차별화된 특별한 시사점을 내포하고 있다. 일반적인 모던 록의 성공 방정식으로부터 탈피한 다양한 실험들과 남다른 주제 의식, 앨범으로서의 완성도로 승부하는 이전 차트에선 쉽게 찾아볼 수 없는 성격의 작품인 것이다. 여기에 비교적 난해했던 초창기로부터의 색깔에 수려한 멜로디를 가미한 NO PAIN, Tik Tak Tok은 색다른 대중성으로 모던 록의 영역을 개척해나갔다는 평가를 받는다.<p></aside>
+        </div>
+        <div class="side-column">
+          <article class="con">
+             <div class="text-content">
+            <div class="another-box"><p> NO PAIN<br>많은 사람들이 실리카겔이라는 밴드를 알대 된 대표적인 곡이다.<br>곡이 대중적인 부분도 있고, 실리카겔의 독특한 사운드가 함께 있어 더욱 돋보이는 곡이다. <br>'더 시즌즈-최정훈의 밤의공원', '멜론뮤직어워드 MMA 2023' 등의 대중적이고 유행중인 프로그램에 나와 부르기도 했던 곡이다. 한국 힙합의 사양세와 트로트의 강세, 펜타포트 록 페스티벌의 성황리 등 음악 트렌드의 큰 변혁 속에서도 이들의 색을 잃지 않고 10년 동안 줏대 있게 음악을 해왔다는 점에서도 이들의 성공은 더더욱 의미가 있다.<br></p></div>
+            <div class="image3"><img src="https://i.imgur.com/3vuTT25.png" style="width: 100%; height: 100%;"></div>
+            <div class="image4"><img src="https://i.imgur.com/eQn6zoD.png" style="width: 100%; height: 100%;"></div>
+            <div class="S"><p>N</p></div>
+            <div class="another-box2"><p>POWER ANDRE 99<br> 가장 최근애 나온 앨범으로 'Realize', 'APEX'라는 곡이 인기를 끌고 있다.<br> 2023년 11월, 정규 2집 [POWER ANDRE 99]의 모든 수록곡을 동명의 단독 공연에서 최초로 공개하며 실리카겔만의 새로운 방식으로 정규 앨범 발매 소식을 알렸다. 발매 전부터 모두의 예측을 벗어난 다양한 시도들은 대중의 기대감을 더욱 증폭시켰다.</p></div>
+            <div class="another-box3"><p> 밴드의 정체성을 효과적으로 표현함과 동시에 실리카겔의 색도 가장 잘 드러나는 곡인 것 같아 개인적으로 가장 좋아하는 곡이다. 멤버 김한주의 표현을 잠시 빌려오자면, [Desert Eagle]은 "지금까지의 실리카겔 곡 중 가장 화려한 연주”로 완성되었다. 후반부 하이라이트는 절정으로 휘몰아치는 사운드를 통해 밀도 있는 흡입력을 선보이고 있는데, 마치 별자리처럼 연결되어 곡 전체의 분위기를 조성하는 노랫말과 어우러져 실리카겔과 유령들이 사막을 횡단하는 웅장한 장면을 절묘하게 담아낸다. 또한, 굳이 장르 팬이 아니더라도 어느새 흥얼거리고 있을 법한 전반부의 캐치한 멜로디도 인상적이다. 만약 이 곡을 통해 실리카겔이라는 팀을 처음 알게 되었다면 부담 없이 스타트를 끊을 수 있는 좋은 기회가 될 것이라 생각한다.<br>
+</p></div>
+              <div class="U"><p>P. A</p>
+          </article>
+          <article class="con2"><img src="https://ifh.cc/g/QX8vW4.jpg" style="width: 100%; height: 100%;"></article>
+        </div>
+      </div>
+      <article class="con3"><div class="img"><img src="https://i.imgur.com/LQruFLv.png" style="width: 100%; height: 100%;"></div></article>
+      <article class="con5"><p>DEGERT EAGLE</p></article>
+      <footer></footer>
+    </div>
+  </div>
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.8"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
